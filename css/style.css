@@ -146,7 +146,28 @@ h5{
   .header .container{
     margin-bottom: 60px;
   }
+  .navbar-brand{
+    order: 3;
+  }
+  .login-block{
+    order: 4;
+  }
+  .navbar-toggler{
+    order: 5;
 }
+.nav-item{
+  padding: 12px;
+  padding-right: 48px;
+  transition: 0.5s;
+  text-align: center;
+}
+.navbar-nav{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+}
+
 .navbar-brand img {
   width: 32px;
   height: 22px;
@@ -161,22 +182,21 @@ h5{
   color: rgba(115, 168, 248, 0.8)!important;
   text-shadow: 0 0  5px rgb(13 110 253 / 80%);
 }
-.navbar-collapse.show{
-  order: 4;
-  /* transition: 0; */
+.navbar-collapse.show .navbar-brand{
+    /* transition: 0; */
 }
-.navbar-toggler{
-  /* transition-duration: 0s!important;
-  transition: 0!important; */
+.navbar-toggler.collapsed{
 }
+
 .navbar-collapse.show ul{
   flex-direction: row;
   flex-wrap: wrap;
 }
-.navbar-collapse.show li{
+/* .navbar-collapse.show li{
   text-align: center;
   padding: 12px;
-}
+  transition: 0.5s;
+} */
 .nav-item {
   font-weight: 400;
 }
