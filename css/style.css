@@ -195,6 +195,12 @@ h5{
   line-height: 0;
 }
 
+  @media only screen and (max-width: 992px)  {
+    .hero__br{
+      display: none;
+    }}
+
+
 .login-link {
   text-decoration: none;
   color: #fff;
@@ -259,10 +265,10 @@ transition: 0.3s;
   background:linear-gradient(#743ad5,#d53a9d); 
   -webkit-mask: 
   linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude; 
-          transition: 0.2s;
+  mask-composite: exclude; 
+  transition: 0.2s;
 }
 .btn-play:hover:before{
   padding:3px; 
